@@ -141,7 +141,7 @@ select:hover,
 }
 
 form {
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 40px;
     display: flex;
     /* 📍 Свойства для расположения элементов (инпута и кнопки) и отступа между ними */
@@ -236,16 +236,25 @@ footer {
 
     .about-section {
         padding: 60px 0px;
+        gap: ;
     /* 📍 Внутренний отступ сверху и снизу */
     }
 
     .info-wrapper {
+        display: flex;
+        flex-direction: column;
         gap: 60px;
     }
+
+    .about-section .wrapper{
+        gap: 60px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     .info-wrapper {
+        gap: 60px;
         /* 📍 Свойства для расположения 2-x списков и отступа между ними */
     }
 }
@@ -253,19 +262,23 @@ footer {
 /* Стили для адаптива под мобильные устройства */
 @media screen and (max-width: 576px) {
     .main-section {
+        padding: 60px 0px 100px;
         /* 📍 Внутренние отступы сверху и снизу */
     }
 
     .main-section .wrapper {
+        gap: 40px;
         /* 📍 Отступ между изображением и блоком с текстом */
     }
 
     .main-title {
+        font-size: 36px
         /* 📍 Размер шрифта */
     }
 
     .about-section .wrapper,
     .info-wrapper {
+        gap: 50px;
         /* 📍 Отступ между изображением и блоком с текстом */
     }
 }
