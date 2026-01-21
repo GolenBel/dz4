@@ -8,13 +8,13 @@
     width: 100%;
     margin: 0px auto;
     max-width: 1180px; /* ⚠️ ОБРАТИ ВНИМАНИЕ - максимальная ширина увеличилась на размер отступов, чтобы ширина контента оставалась корректной */
-    /* 📍 Свойство для внутрених отступов */
+    padding: 20px;
 }
 
 body {
     font-family: "Inter", sans-serif; 
     color: #303030;
-    /* 📍 Минимальная ширина */ 
+    min-width: 576px;
 }
 
 header {
@@ -142,6 +142,8 @@ select:hover,
 
 form {
     margin-bottom: 40px;
+    display: flex;
+    gap: 20px;;
     /* 📍 Свойства для расположения элементов (инпута и кнопки) и отступа между ними */
 }
 
@@ -209,23 +211,36 @@ footer {
 /* Стили для адаптива под планшеты */
 @media screen and (max-width: 1200px) {
     .main-section {
+        min-height: 1084px;
         /* 📍 Свойства для установки минимальной высоты секции по размеру контента и нижнего внутреннего отступа */
     }
 
     .main-section .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        gap: 60px;
         /* 📍 Свойства для расположения элементов и отступа между ними */
     }
 
     .main-image {
+        max-width: 100%;
         /* 📍 Максимальная ширина для главного изображения в % */
     }
 
     .text-wrapper {
+        max-width: 560px;
         /* 📍 Максимальная ширина для блока с текстом */
     }
 
     .about-section {
+        margin: 50px 40px;
     /* 📍 Внутренний отступ сверху и снизу */
+    }
+
+    .books {
+        display: flex;
+        flex-direction: column;
     }
 }
 
