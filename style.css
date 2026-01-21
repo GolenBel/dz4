@@ -141,9 +141,9 @@ select:hover,
 }
 
 form {
+    gap: 20px;
     margin-bottom: 40px;
     display: flex;
-    gap: 20px;;
     /* 📍 Свойства для расположения элементов (инпута и кнопки) и отступа между ними */
 }
 
@@ -235,12 +235,12 @@ footer {
     }
 
     .about-section {
-        padding: 100px 0px;
+        padding: 60px 0px;
     /* 📍 Внутренний отступ сверху и снизу */
     }
 
     .info-wrapper {
-        gap: normal;
+        gap: 60px;
     }
 }
 
